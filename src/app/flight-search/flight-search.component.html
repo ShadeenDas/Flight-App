@@ -1,0 +1,27 @@
+<!-- flight-search.component.html -->
+
+<div class="container">
+    <div class="form-group">
+      <label class="form-label">Origin:</label>
+      <select class="form-select" [(ngModel)]="origin">
+        <option value="" disabled selected>Select Origin</option>
+        <option *ngFor="let option of originOptions" [value]="option">{{ option }}</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <label class="form-label">Destination:</label>
+      <select class="form-select" [(ngModel)]="destination">
+        <option value="" disabled selected>Select Destination</option>
+        <option *ngFor="let option of destinationOptions" [value]="option">{{ option }}</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <label class="form-label">Date:</label>
+      <input class="form-select" [(ngModel)]="date" type="date" />
+    </div>
+    
+    <button class="search-button" (click)="searchFlights()">Search</button>
+  </div>
+  

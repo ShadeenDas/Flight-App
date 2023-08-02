@@ -1,0 +1,71 @@
+/* Styling for the top bar */
+.top-bar {
+  background-color: #007bff; /* Replace with your preferred color */
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logout-button {
+  background-color: transparent;
+  border: none;
+  color: #fff; /* Replace with your preferred color */
+  cursor: pointer;
+}
+
+/* Styling for the main content area */
+.dashboard-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  color: #007bff; /* Replace with your preferred color */
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Styling for the booking cards */
+.booking-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.booking-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.booking-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.booking-details {
+  margin-bottom: 20px;
+}
+
+.booking-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.web-checkin-button,
+.cancel-button {
+  background-color: #007bff; /* Replace with your preferred color */
+  color: #fff; /* Replace with your preferred color */
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.web-checkin-button:hover,
+.cancel-button:hover {
+  background-color: #0056b3; /* Replace with your preferred color */
+}

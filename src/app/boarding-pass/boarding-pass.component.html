@@ -1,0 +1,117 @@
+<!-- <h2>Boarding Pass</h2>
+
+<div *ngIf="booking">
+  <p>Booking ID: {{ booking.id }}</p>
+  <p>Passenger Name: {{ booking.passenger.name }}</p>
+  <p>Flight Details:</p>
+  <p>Origin: {{ booking.flight.origin }}</p>
+  <p>Destination: {{ booking.flight.destination }}</p>
+  <p>Date: {{ booking.flight.date }}</p>
+  <p>Departure Time: {{ booking.flight.departureTime }}</p>
+  <p>Arrival Time: {{ booking.flight.arrivalTime }}</p>
+  <p>Price: ${{ booking.flight.price }}</p>
+  <p>Seat Number: {{ booking.seatNumber }}</p>
+</div> -->
+
+
+<body>
+
+	<div class="ticket">
+		<div class="block">
+			<div class="boarding">
+				<h1>Boarding Pass</h1>
+				<div class="till">
+					<p>Boarding till</p>
+					<span>Boards: {{ booking.flight.departureTime }}</span>
+					<span>Arrives: {{ booking.flight.arrivalTime }}</span>
+				</div>
+			</div>
+			<div class="content name">
+				<h3>Name Of Passenger</h3>
+				<p>{{ booking.passenger.name }}</p>
+			</div>
+			<div class="content from">
+				<h3>From</h3>
+				<p>{{ booking.flight.origin }}</p>
+			</div>
+			<div class="content to">
+				<div class="to-m">
+					<h3>To</h3>
+					<p>{{ booking.flight.destination }}</p>
+				</div>
+
+				<div class="airline">
+				
+				</div>
+			</div>
+			<div class="scan">
+				<img src="https://chart.googleapis.com/chart?cht=qr&chl=UA%201136%2098745-34538459&chs=180x180&choe=UTF-8&chld=L|2" alt="">
+			</div>
+		</div>
+
+		<div class="section-2">
+			<div class="gate">
+				<h3>Gate</h3>
+				<p>B3</p>
+			</div>
+			<div class="flight">
+				<h3>Flight</h3>
+				<p>2005</p>
+			</div>
+			<div class="seat">
+				<h3>Seat</h3>
+				<p>{{ booking.seatNumber }}</p>
+			</div>
+			<div class="group">
+				<h3>Group</h3>
+				<p>3</p>
+			</div>
+		</div>
+
+		<div class="left-side">
+			<div class="airline">
+				DIGIGO
+			</div>
+			<div class="name">
+				<h3>Name Of Passenger</h3>
+				<p>{{ booking.passenger.name }}</p>
+			</div>
+			<div class="from">
+				<h3>From</h3>
+				<p>{{ booking.flight.origin }}</p>
+			</div>
+			<div class="from">
+				<div class="to-m">
+					<h3>To</h3>
+					<p>{{ booking.flight.destination }}</p>
+				</div>
+			</div>
+
+			<div class="section-2">
+				<div class="gate">
+					<h3>Gate</h3>
+					<p>B3</p>
+				</div>
+				<div class="flight">
+					<h3>Flight</h3>
+					<p>2005</p>
+				</div>
+				<div class="seat">
+					<h3>Seat</h3>
+					<p>{{ booking.seatNumber }}</p>
+				</div>
+				<div class="group">
+					<h3>Group</h3>
+					<p>3</p>
+				</div>
+			</div>
+
+			<div class="time">
+				<p>Boarding till</p>
+				<span>Boards: {{ booking.flight.departureTime }}</span>
+				<span>Arrives: {{ booking.flight.arrivalTime }}</span>
+			</div>
+		</div>
+	</div>
+
+</body>

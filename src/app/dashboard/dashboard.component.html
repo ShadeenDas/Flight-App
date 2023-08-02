@@ -1,0 +1,28 @@
+<div class="top-bar">
+    <button class="logout-button" (click)="logout()">Logout</button>
+  </div>
+  
+  <div class="dashboard-content">
+    <h2>Your Bookings</h2>
+    <div class="booking-cards" *ngIf="bookings.length > 0">
+      <div class="booking-card" *ngFor="let booking of bookings">
+        <div class="booking-details">
+          <h3>{{ booking.flight.origin }} to {{ booking.flight.destination }}</h3>
+          <p>Passenger Name: {{ booking.passenger.name }}</p>
+          <p>Date: {{ booking.flight.date }}</p>
+          <p>Departure Time: {{ booking.flight.departureTime }}</p>
+          <p>Arrival Time: {{ booking.flight.arrivalTime }}</p>
+          <p>Price: ₹{{ booking.flight.price }}</p>
+        </div>
+        <div class="booking-actions">
+          <!-- Web Check-in button -->
+          <button class="web-checkin-button" (click)="webCheckIn(booking)">Web Check-in</button>
+  
+          <!-- Cancel button -->
+          <button class="cancel-button" (click)="redirectToCancelConfirmation(booking.id)">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="bookings.length === 0">You have no bookings yet.</div>
+  </div>
+  

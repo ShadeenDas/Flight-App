@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="confirmation-card">
+      <h2 class="title">Payment Confirmed</h2>
+      <p class="confirmation-message">
+        Thank you, {{ booking?.passenger.name }}, your booking is confirmed for flight
+        {{ booking?.flight.origin }} to {{ booking?.flight.destination }} on {{ booking?.flight.date }}.
+      </p>
+      <button class="boarding-pass-button" (click)="checkBoardingPass()">Check Your Boarding Pass</button>
+    </div>
+  </div>
+  

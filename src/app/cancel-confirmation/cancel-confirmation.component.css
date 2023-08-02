@@ -1,0 +1,137 @@
+/* Reset default styles for better consistency */
+
+* {
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+  }
+
+ 
+
+  /* Global styles */
+
+  body {
+
+    font-family: "Helvetica Neue", Arial, sans-serif;
+
+    background-color: #f2f2f2;
+
+    color: #333;
+
+  }
+
+ 
+
+  /* Container styles */
+
+  .booking-container {
+
+    max-width: 400px;
+
+    margin: 0 auto;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    background-color: #fff;
+
+  }
+
+ 
+
+  /* Section title styles */
+
+  .section-title {
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+
+    color: #333;
+
+    text-align: center;
+
+  }
+
+ 
+
+  /* Booking info styles */
+
+  .booking-info {
+
+    margin-bottom: 20px;
+
+  }
+
+ 
+
+  .booking-info p {
+
+    margin: 6px 0;
+
+  }
+
+ 
+
+  /* Sub-heading styles */
+
+  .sub-heading {
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    color: #555;
+
+  }
+
+ 
+
+  /* Cancel button styles */
+
+  .cancel-button {
+
+    background-color: #ff5050;
+
+    color: #fff;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    padding: 12px 24px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s;
+
+    display: block;
+
+    width: 100%;
+
+    text-align: center;
+
+  }
+
+ 
+
+  .cancel-button:hover {
+
+    background-color: #ff3333;
+
+  }
+
+ 

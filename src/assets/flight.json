@@ -1,0 +1,135 @@
+{
+    "flights": [
+    {
+    "name": "Abhi",
+    "routeSource": "Goa",
+    "routeDestination": "Hyderabad",
+    "flightDuration": "580",
+    "departureDate": "13-07-2023",
+    "departureTime": "12.00 PM",
+    "returnDate": "13-7-2023",
+    "returnTime": "2.00 PM",
+    "isEconomyClass": "True",
+    "isBusinessClass": "True",
+    "isFirstClass": "True"
+    },
+    {
+    "name": "Akash",
+    "routeSource": "Bangalore",
+    "routeDestination": "Hyderabad",
+    "flightDuration": "590",
+    "departureDate": "21-07-2023",
+    "departureTime": "12.00 PM",
+    "returnDate": "21-7-2023",
+    "returnTime": "2.00 PM",
+    "isEconomyClass": "True",
+    "isBusinessClass": "True",
+    "isFirstClass": "True"
+    },
+    {
+    "name": "Akshay",
+    "routeSource": "Goa",
+    "routeDestination": "Chennai",
+    "flightDuration": "520",
+    "departureDate": "19-07-2023",
+    "departureTime": "12.00 PM",
+    "returnDate": "19-7-2023",
+    "returnTime": "2.00 PM",
+    "isEconomyClass": "True",
+    "isBusinessClass": "True",
+    "isFirstClass": "True"
+    },
+    {
+    "name": "Ankith",
+    "routeSource": "Mumbai",
+    "routeDestination": "Hyderabad",
+    "flightDuration": "560",
+    "departureDate": "12-07-2023",
+    "departureTime": "12.00 PM",
+    "returnDate": "12-7-2023",
+    "returnTime": "2.00 PM",
+    "isEconomyClass": "True",
+    "isBusinessClass": "True",
+    "isFirstClass": "True"
+    },
+    {
+    "name": "Aditya",
+    "routeSource": "Pune",
+    "routeDestination": "Hyderabad",
+    "flightDuration": "560",
+    "departureDate": "18-07-2023",
+    "departureTime": "12.00 PM",
+    "returnDate": "18-7-2023",
+    "returnTime": "2.00 PM",
+    "isEconomyClass": "True",
+    "isBusinessClass": "True",
+    "isFirstClass": "True"
+    },
+    {
+    "name": "Adithi",
+    "routeSource": "Chennai",
+    "routeDestination": "Pune",
+    "flightDuration": "560",
+    "departureDate": "17-07-2023",
+    "departureTime": "12.00 PM",
+    "returnDate": "18-7-2023",
+    "returnTime": "2.00 PM",
+    "isEconomyClass": "True",
+    "isBusinessClass": "True",
+    "isFirstClass": "True"
+    },
+    {
+    "name": "Harshitha",
+    "routeSource": "Mumbai",
+    "routeDestination": "Pune",
+    "flightDuration": "560",
+    "departureDate": "16-07-2023",
+    "departureTime": "12.00 PM",
+    "returnDate": "16-7-2023",
+    "returnTime": "2.00 PM",
+    "isEconomyClass": "True",
+    "isBusinessClass": "True",
+    "isFirstClass": "True"
+    },
+    {
+    "name": "Kajol",
+    "routeSource": "Mangalore",
+    "routeDestination": "Hyderabad",
+    "flightDuration": "560",
+    "departureDate": "15-07-2023",
+    "departureTime": "12.00 PM",
+    "returnDate": "15-7-2023",
+    "returnTime": "2.00 PM",
+    "isEconomyClass": "True",
+    "isBusinessClass": "True",
+    "isFirstClass": "True"
+    },
+    {
+    "name": "Sihi",
+    "routeSource": "Delhi",
+    "routeDestination": "Hyderabad",
+    "flightDuration": "560",
+    "departureDate": "14-07-2023",
+    "departureTime": "1.00 PM",
+    "returnDate": "14-7-2023",
+    "returnTime": "4.00 PM",
+    "isEconomyClass": "True",
+    "isBusinessClass": "True",
+    "isFirstClass": "True"
+    },
+    {
+    "name": "Tanu",
+    "routeSource": "Mnagalore",
+    "routeDestination": "Pune",
+    "flightDuration": "340",
+    "departureDate": "13-07-2023",
+    "departureTime": "12.00 PM",
+    "returnDate": "13-7-2023",
+    "returnTime": "3.00 PM",
+    "isEconomyClass": "True",
+    "isBusinessClass": "True",
+    "isFirstClass": "True"
+    }
+    ]
+}
+    

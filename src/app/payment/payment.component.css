@@ -1,0 +1,405 @@
+/* Reset default styles for better consistency */
+
+* {
+
+  box-sizing: border-box;
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+ 
+
+/* Global styles */
+
+body {
+
+  font-family: "Arial", sans-serif;
+
+  background-color: #f9f9f9;
+
+  color: #333;
+
+}
+
+ 
+
+/* Container styles */
+
+.container {
+
+  max-width: 600px;
+
+  margin: 0 auto;
+
+  padding: 30px;
+
+  border-radius: 10px;
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+  background-color: #fff;
+
+ 
+
+}
+
+ 
+
+/* Title styles */
+
+.title {
+
+  font-size: 28px;
+
+  font-weight: bold;
+
+  margin-bottom: 20px;
+
+  color: #333;
+
+  text-align: center;
+
+}
+
+ 
+
+/* Booking details styles */
+
+.booking-details {
+
+  margin-bottom: 20px;
+
+  text-align: center;
+
+}
+
+ 
+
+.detail-row {
+
+  display: flex;
+
+  align-items: center;
+
+  margin-bottom: 10px;
+
+}
+
+ 
+
+.detail-label {
+
+  flex: 1;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  color: #555;
+
+}
+
+ 
+
+.detail-value {
+
+  flex: 2;
+
+  font-size: 16px;
+
+  color: #333;
+
+}
+
+ 
+
+/* Payment form styles */
+
+.payment-form {
+
+  background-color: #f9f9f9;
+
+  padding: 20px;
+
+  border-radius: 8px;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+ 
+
+.form-title {
+
+  font-size: 20px;
+
+  font-weight: bold;
+
+  margin-bottom: 10px;
+
+  color: #333;
+
+}
+
+ 
+
+.form-group {
+
+  margin-bottom: 20px;
+
+}
+
+ 
+
+.form-group label {
+
+  font-size: 14px;
+
+  color: #555;
+
+  display: block;
+
+  margin-bottom: 5px;
+
+}
+
+ 
+
+.form-group input {
+
+  width: 100%;
+
+  padding: 10px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 5px;
+
+  font-size: 16px;
+
+  color: #333;
+
+  background-color: #fff;
+
+  transition: border-color 0.2s;
+
+}
+
+.form-group input:focus {
+
+  outline: none;
+
+  border-color: #007bff;
+
+  box-shadow: 0 0 3px #007bff;
+
+}
+
+.card-details {
+
+  margin-bottom: 20px;
+
+}
+
+ 
+
+.card-details .form-group {
+
+  width: 100%;
+
+  margin-bottom: 20px;
+
+}
+
+ 
+
+.cvv-expiry {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+
+}
+
+.cvv-expiry .form-group {
+
+  flex: 1;
+
+  margin-right: 10px;
+
+}
+
+ 
+
+/* Pay button styles */
+
+.pay-button {
+
+  background-color: #4caf50;
+
+  color: #fff;
+
+  font-size: 18px;
+
+  font-weight: bold;
+
+  padding: 12px 24px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  transition: background-color 0.2s;
+
+  display: block;
+
+  width: 100%;
+
+  text-align: center;
+
+}
+
+ 
+
+.pay-button:hover {
+
+  background-color: #45a049;
+
+}
+
+ 
+
+/* Elegant Modern Design Enhancements */
+
+.container {
+
+  background-color: #f6f6f6;
+
+}
+
+ 
+
+.title {
+
+  color: #444;
+
+  background-color: #fff;
+
+  padding: 10px;
+
+  border-radius: 8px;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+ 
+
+.booking-details {
+
+  background-color: #fff;
+
+  padding: 20px;
+
+  border-radius: 8px;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+ 
+
+.payment-form {
+
+  background-color: #f9f9f9;
+
+  padding: 20px;
+
+  border-radius: 8px;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+ 
+
+.form-group input {
+
+  background-color: #fff;
+
+  border: 1px solid #ddd;
+
+  transition: border-color 0.2s;
+
+}
+
+ 
+
+.form-group input:focus {
+
+  outline: none;
+
+  border-color: #007bff;
+
+  box-shadow: 0 0 3px #007bff;
+
+}
+
+ 
+
+.cvv-expiry input {
+
+  flex: 1;
+
+  margin-right: 10px;
+
+}
+
+ 
+
+/* Pay button styles */
+
+.pay-button {
+
+  background-color: #007bff;
+
+  color: #fff;
+
+  font-size: 18px;
+
+  font-weight: bold;
+
+  padding: 12px 24px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  transition: background-color 0.2s;
+
+  display: block;
+
+  width: 100%;
+
+  text-align: center;
+
+}
+
+ 
+
+.pay-button:hover {
+
+  background-color: #0056b3;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}

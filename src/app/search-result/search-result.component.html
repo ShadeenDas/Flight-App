@@ -1,0 +1,31 @@
+<div class="container">
+<div *ngIf="flights.length > 0">
+    <h3 class="result-header">Search Results for {{ flights[0].origin }} to {{ flights[0].destination }} on {{ flights[0].date }}:</h3>
+    <table >
+        <thead>
+          <tr>
+            <th>Origin</th>
+            <th>Destination</th>
+            <th>Date</th>
+            <th>Departure Time</th>
+            <th>Arrival Time</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let flight of flights">
+            <td>{{ flight.origin }}</td>
+            <td>{{ flight.destination }}</td>
+            <td>{{ flight.date }}</td>
+            <td>{{ flight.departureTime }}</td>
+            <td>{{ flight.arrivalTime }}</td>
+            <td>₹{{ flight.price }}</td>
+            <td><button class="search-button" (click)="bookNow(flight)">Book Now</button></td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+  <div *ngIf="flights.length === 0">
+    <p>No flights found for the selected criteria.</p>
+  </div>
+</div>  

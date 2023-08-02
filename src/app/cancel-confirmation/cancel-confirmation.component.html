@@ -1,0 +1,32 @@
+<div class="booking-container" *ngIf="booking">
+
+  <h2 class="section-title">Cancel Confirmation</h2>
+
+  <div class="booking-info">
+
+    <p>Booking ID: {{ booking.id }}</p>
+
+    <p>Passenger Name: {{ booking.passenger.name }}</p>
+
+    <p class="sub-heading">Flight Details:</p>
+
+    <p>Origin: {{ booking.flight.origin }}</p>
+
+    <p>Destination: {{ booking.flight.destination }}</p>
+
+    <p>Date: {{ booking.flight.date }}</p>
+
+    <p>Departure Time: {{ booking.flight.departureTime }}</p>
+
+    <p>Arrival Time: {{ booking.flight.arrivalTime }}</p>
+
+    <p>Price: ₹{{ booking.flight.price }}</p>
+    <p>Refund Amount: ₹{{ booking.flight.price - (800%(booking.flight.price)) }}</p>
+
+  </div>
+
+ 
+
+  <button class="cancel-button" (click)="cancelBooking()">Cancel</button>
+
+</div>

@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="content">
+    <h2>Seat Selection</h2>
+
+    <div *ngIf="booking">
+      <div class="flight-details card">
+        <h3>Flight Details</h3>
+        <p><strong>Origin:</strong> {{ booking.flight.origin }}</p>
+        <p><strong>Destination:</strong> {{ booking.flight.destination }}</p>
+        <p><strong>Date:</strong> {{ booking.flight.date }}</p>
+        <p><strong>Departure Time:</strong> {{ booking.flight.departureTime }}</p>
+        <p><strong>Arrival Time:</strong> {{ booking.flight.arrivalTime }}</p>
+        <p><strong>Price:</strong> ₹{{ booking.flight.price }}</p>
+      </div>
+
+      <div class="seat-map card">
+        <h3>Seat Map</h3>
+        <div class="seat-grid">
+          <div class="seat-row" *ngFor="let row of seatRows">
+            <div class="seat" *ngFor="let seat of row" (click)="selectSeat(seat)" [ngClass]="{'selected': seat === selectedSeat}">
+              {{ seat }}
+            </div>
+          </div>
+        </div>
+        <p class="selected-seat" *ngIf="selectedSeat">Selected Seat: {{ selectedSeat }}</p>
+      </div>
+
+      <!-- Save seat selection button -->
+      <button class="btn-save" (click)="saveSeatSelection()">Save Seat Selection</button>
+    </div>
+  </div>
+</div>

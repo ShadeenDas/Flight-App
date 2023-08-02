@@ -1,0 +1,169 @@
+<div class="container">
+
+ 
+
+  <div class="passenger-form">
+
+    <div class="card">
+
+      <div class="card-content">
+
+        <h2 class="title">Flight Details</h2>
+
+        <div class="detail-row">
+
+          <p>Origin: {{ flight.origin }}</p>
+
+          <p>Destination: {{ flight.destination }}</p>
+
+          <p>Date: {{ flight.date }}</p>
+
+          <p>Departure Time: {{ flight.departureTime }}</p>
+
+          <p>Arrival Time: {{ flight.arrivalTime }}</p>
+
+          <p>Price: ₹{{ flight.price }}</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+     
+
+      <div class="card">
+
+        <div class="card-content">
+
+          <h2 class="title">Passenger Details</h2>
+
+      <h3>Fill Passenger Information</h3>
+
+      <form class="passenger-form" (ngSubmit)="bookFlight()" #passengerForm="ngForm" validate>
+
+        <div class="form-group">
+
+          <label for="name">Name:</label>
+
+          <input type="text" id="name" name="name" required [(ngModel)]="passenger.name">
+
+          <div *ngIf="passengerForm.submitted && passengerForm.controls['name'].invalid">
+
+            <span *ngIf="passengerForm.controls['name'].errors?.['required']">Name is required.</span>
+
+          </div>
+
+        </div>
+
+     
+
+        <div class="form-group">
+
+          <label for="age">Age:</label>
+
+          <input type="number" id="age" name="age" required [(ngModel)]="passenger.age">
+
+          <div *ngIf="passengerForm.submitted && passengerForm.controls['age'].invalid">
+
+            <span *ngIf="passengerForm.controls['age'].errors?.['required']">Age is required.</span>
+
+          </div>
+
+        </div>
+
+     
+
+        <div class="form-group">
+
+          <label for="gender">Gender:</label>
+
+          <select id="gender" name="gender" required [(ngModel)]="passenger.gender">
+
+            <option value="" disabled>Select Gender</option>
+
+            <option value="male">Male</option>
+
+            <option value="female">Female</option>
+
+            <option value="other">Other</option>
+
+          </select>
+
+          <div *ngIf="passengerForm.submitted && passengerForm.controls['gender'].invalid">
+
+            <span *ngIf="passengerForm.controls['gender'].errors?.['required']">Gender is required.</span>
+
+          </div>
+
+        </div>
+
+     
+
+        <div class="form-group">
+
+          <label for="email">Email:</label>
+
+          <input type="email" id="email" name="email" required [(ngModel)]="passenger.email">
+
+          <div *ngIf="passengerForm.submitted && passengerForm.controls['email'].invalid">
+
+            <span *ngIf="passengerForm.controls['email'].errors?.['required']">Email is required.</span>
+
+            <span *ngIf="passengerForm.controls['email'].errors?.['email']">Invalid email format.</span>
+
+          </div>
+
+        </div>
+
+     
+
+        <div class="form-group">
+
+          <label for="mobile">Mobile Number:</label>
+
+          <input type="tel" id="mobile" name="mobile" required pattern="[0-9]{10}" [(ngModel)]="passenger.mobile">
+
+          <div *ngIf="passengerForm.submitted && passengerForm.controls['mobile'].invalid">
+
+            <span *ngIf="passengerForm.controls['mobile'].errors?.['required']">Mobile Number is required.</span>
+
+            <span *ngIf="passengerForm.controls['mobile'].errors?.['pattern']">Invalid mobile number format (10 digits).</span>
+
+          </div>
+
+        </div>
+
+     
+
+        <div class="form-group">
+
+          <label for="password">Password:</label>
+
+          <input type="password" id="password" name="password" required [(ngModel)]="passenger.password">
+
+          <div *ngIf="passengerForm.submitted && passengerForm.controls['password'].invalid">
+
+            <span *ngIf="passengerForm.controls['password'].errors?.['required']">Password is required.</span>
+
+          </div>
+
+        </div>
+
+     
+
+        <button class="book-flight-button" type="submit" [disabled]="passengerForm.invalid">Book Flight</button>
+
+      </form>
+
+        </div>
+
+ 
+
+      </div>
+
+  </div>
+
+ 
+
+</div>
